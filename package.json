@@ -1,0 +1,56 @@
+{
+  "name": "chat-for-test",
+  "version": "0.1.0",
+  "main": "dist/chat.js",
+  "module": "dist/main.esm.js",
+  "browser": "dist/main.umd.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:umd:min": "rollup -c",
+    "dev": "webpack --mode development",
+    "test": "react-scripts test --env=jsdom",
+    "babel": "babel --presets @babel/preset-react src/index.js",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/styles -o src/styles --watch --recursive"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@material-ui/core": "^3.1.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^7.0.0-beta.3",
+    "babel-preset-react": "^7.0.0-beta.3",
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.8.3",
+    "node-sass-chokidar": "^1.3.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "2.0.0-next.2150693d",
+    "react-tag-input": "^5.2.2",
+    "rollup": "^0.66.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-image": "^1.0.2",
+    "rollup-plugin-uglify": "^6.0.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3"
+  },
+  "devDependencies": {
+    "@pusher/chatkit": "^0.7.17",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "rollup-plugin-embed-css": "^0.3.0",
+    "rollup-plugin-image-files": "^1.2.0",
+    "rollup-plugin-img": "^1.1.0",
+    "rollup-plugin-terser": "^3.0.0"
+  },
+  "browserslist": [
+    ">0.25%",
+    "not op_mini all",
+    "ie 11"
+  ]
+}
