@@ -22,16 +22,16 @@
 Встраиваем в наше приложение 
 4 Заменяем содержимое файла src/App.js на этот кусок кода
 ```js
-import React, { Component } from 'react';
-import Chat from 'chat-for-test'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Chat from 'chat-for-test-beta'
+import 'chat-for-test-beta/src/styles/App.css';
+import registerServiceWorker from './registerServiceWorker';
 
-class App extends Component {
-    render() {
-        return ( 
-            <Chat />
-         )
-    }
-}
-export default App
+ReactDOM.render(
+<Chat>
+</Chat>, document.getElementById('root'));
+registerServiceWorker();
 ```
 5 Готово!
