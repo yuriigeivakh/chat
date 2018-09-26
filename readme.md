@@ -23,7 +23,7 @@
 4 Заменяем содержимое файла src/App.js на этот кусок кода
 ```js
 import React, { Component } from 'react';
-import Chat from 'countdown-timer'
+import Chat from 'chat-for-test'
 
 class App extends Component {
     render() {
